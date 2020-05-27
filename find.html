@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/cd5e56d4b7.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>찾기 | ppby</title>
+  </head>
+  <body>
+    <!-- 상태 바 -->
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <i class="fas fa-signal"></i>
+        <span class="status-bar__agency">KT </span>
+        <span class="status-bar__wifi">
+          <i class="fas fa-wifi"></i>
+        </span>
+      </div>
+      <div class="status-bar__column">
+        <span class="status-bar__clock">오전 10:14</span>
+      </div>
+      <div class="status-bar__column">
+        <i class="far fa-compass"></i>
+        <i class="far fa-clock"></i>
+        <span class="status-bar__battery-level">100%</span>
+        <i class="fas fa-battery-full"></i>
+      </div>
+    </div>
+
+    <!-- 이제 없어진 메뉴 -> 현재 뉴스로 바뀜 -->
+    <header class="header">
+      <div class="header__header-column">
+        <h1 class="header__title">찾기</h1>
+      </div>
+      <div class="header__header-column">
+        <span class="header__icon">
+          <i class="fas fa-search"></i>
+        </span>
+        <span class="header__icon">
+          <i class="fas fa-cog"></i>
+        </span>
+      </div>
+    </header>
+    <main class="find">
+      <header class="find__header">
+        <ul class="find__header-lsit">
+          <li class="find__header-btn header-btn">
+            <span class="header-btn__icon">
+              <i class="fas fa-qrcode fa-2x"></i>
+            </span>
+            <span class="header-btn__title">
+              QR코드
+            </span>
+          </li>
+          <li class="find__header-btn header-btn">
+            <span class="header-btn__icon">
+              <i class="fas fa-user-plus fa-2x"></i>
+            </span>
+            <span class="header-btn__title">
+              추천친구
+            </span>
+          </li>
+          <li class="find__header-btn header-btn">
+            <span class="header-btn__icon">
+              <i class="far fa-id-badge fa-2x"></i>
+            </span>
+            <span class="header-btn__title">
+              연락처로 추가
+            </span>
+          </li>
+          <li class="find__header-btn header-btn">
+            <span class="header-btn__icon">
+              <i class="far fa-envelope fa-2x"></i>
+            </span>
+            <span class="header-btn__title">
+              Invite
+            </span>
+          </li>
+        </ul>
+      </header>
+      <ul class="find__recommended">
+        <h5 class="find__title">
+          Recommened Friends
+        </h5>
+        <li class="find__friend friend">
+          <div class="friend__column">
+            <img
+              src="src/img/avatar.png"
+              alt=""
+              class="globar-avatar friend__avatar"
+            />
+            <div class="friend__content">
+              <span class="friend__name">
+                유니👰🏻
+              </span>
+            </div>
+          </div>
+          <div class="friend__column">
+            <div class="freind__friend__add-btn">
+              <i class="fas fa-user-plus"></i>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </main>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__list-item">
+          <a href="friends.html" class="nav__list-link">
+            <i class="far fa-user"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="index.html" class="nav__list-link">
+            <i class="far fa-comment"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="find.html" class="nav__list-link">
+            <i class="fas fa-search"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="more.html" class="nav__list-link">
+            <i class="fas fa-ellipsis-h"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>

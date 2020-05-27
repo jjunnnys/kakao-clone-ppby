@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/cd5e56d4b7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="src/css/styles.css" />
+    <title>친구 | ppby</title>
+  </head>
+  <body>
+    <!-- 상태 바 -->
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <i class="fas fa-signal"></i>
+        <span class="status-bar__agency">KT </span>
+        <span class="status-bar__wifi">
+          <i class="fas fa-wifi"></i>
+        </span>
+      </div>
+      <div class="status-bar__column">
+        <span class="status-bar__clock">오전 10:14</span>
+      </div>
+      <div class="status-bar__column">
+        <i class="far fa-compass"></i>
+        <i class="far fa-clock"></i>
+        <span class="status-bar__battery-level">100%</span>
+        <i class="fas fa-battery-full"></i>
+      </div>
+    </div>
+
+    <!-- 친구 헤더 -->
+    <header class="header">
+      <div class="header__header-column">
+        <h1 class="header__title">친구</h1>
+      </div>
+      <div class="header__header-column">
+        <span class="header__icon">
+          <i class="fas fa-search"></i>
+        </span>
+        <span class="header__icon">
+          <i class="fas fa-user-plus"></i>
+        </span>
+        <span class="header__icon">
+          <i class="fas fa-music"></i>
+        </span>
+        <span class="header__icon">
+          <i class="fas fa-cog"></i>
+        </span>
+      </div>
+    </header>
+
+    <!-- 친구 메인 -->
+    <main class="friends">
+      <!-- 페이지에 여러 개의 헤더를 만들 수 있음 -->
+      <header class="friends__header">
+        <!-- '--' 는 추가되는 새로운 클래스 '__' 는 부모 자식 
+          같은 클래스명으로 다른 태그들에도 적용 가능-->
+        <div class="friends__friend friend freind--lg">
+          <div class="friend__column">
+            <img
+              src="src/img/avatar2.JPG"
+              alt=""
+              class="globar-avatar friend__avatar"
+            />
+            <div class="friend__content">
+              <span class="friend__name">
+                서민준
+              </span>
+              <span class="friend__status">🥕</span>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- 생일 -->
+      <div class="friends__birthday">
+        <div class="friends__column">
+          <h5 class="friends__title">생일인 친구</h5>
+        </div>
+        <div class="friends__column">
+          <i class="fas fa-chevron-up"></i>
+        </div>
+        <div class="friends__friend friend">
+          <div class="friend__column">
+            <span class="friend__birthday-icon">
+              <i class="fas fa-birthday-cake"></i>
+            </span>
+            <div class="friend__content">
+              <span class="friend__name">
+                친구의 생일을 확인해보세요!
+              </span>
+            </div>
+            <div class="friend__content">
+              <span>5 ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 즐겨찾기 -->
+      <div class="friends__favorites">
+        <div class="friends__column">
+          <h5 class="friends__title">즐겨찾기</h5>
+        </div>
+        <div class="friends__column">
+          <i class="fas fa-chevron-up"></i>
+        </div>
+        <div class="friends__friend friend">
+          <div class="friend__column">
+            <img
+              src="src/img/avatar.png"
+              alt=""
+              class="globar-avatar friend__avatar"
+            />
+            <div class="friend__content">
+              <span class="friend__name">
+                유니👰🏻
+              </span>
+            </div>
+          </div>
+          <div class="friend__content">
+            <span>5</span>
+            <span class="freind__show-btn">
+              <i class="fas fa-sort-down"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- 추천 친구 -->
+      <div class="friends__birthday">
+        <div class="friends__column">
+          <h5 class="friends__title">추천친구</h5>
+        </div>
+        <div class="friends__column">
+          <i class="fas fa-chevron-up"></i>
+        </div>
+        <div class="friends__friend friend">
+          <div class="friend__column">
+            <span class="friend__birthday-icon">
+              <i class="far fa-smile-beam"></i>
+            </span>
+            <div class="friend__content">
+              <span class="friend__name">
+                새로운 친구를 만나보세요!
+              </span>
+            </div>
+            <div class="friend__content">
+              <span>58 ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 친구 목록 -->
+      <ul class="friends__list">
+        <div class="friends__column">
+          <h5 class="friends__title">친구 272</h5>
+        </div>
+        <div class="friends__column">
+          <i class="fas fa-chevron-up"></i>
+        </div>
+        <li class="friends__friend friend">
+          <div class="friend__column">
+            <img
+              src="src/img/페퍼보이.jpeg"
+              alt=""
+              class="globar-avatar friend__avatar"
+            />
+            <div class="friend__content">
+              <span class="friend__name">
+                물고기
+              </span>
+            </div>
+          </div>
+          <div class="friend__column">
+            <div class="freind__now-listening">
+              <span>
+                지렁이 - 한대수
+              </span>
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </main>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__list-item">
+          <a href="friends.html" class="nav__list-link">
+            <i class="fas fa-user"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="index.html" class="nav__list-link">
+            <i class="far fa-comment"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="" class="nav__list-link">
+            #
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="more.html" class="nav__list-link">
+            <i class="fas fa-ellipsis-h"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+<!-- 컴포넌트 단위로 시작 또는 반복되는 페이지의 파트로 시작 -->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/cd5e56d4b7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="src/css/styles.css" />
+    <title>유니👰🏻 | ppby</title>
+  </head>
+  <body>
+    <!-- 상태 바 -->
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <i class="fas fa-signal"></i>
+        <span class="status-bar__agency">KT </span>
+        <span class="status-bar__wifi">
+          <i class="fas fa-wifi"></i>
+        </span>
+      </div>
+      <div class="status-bar__column">
+        <span class="status-bar__clock">오전 10:14</span>
+      </div>
+      <div class="status-bar__column">
+        <i class="far fa-compass"></i>
+        <i class="far fa-clock"></i>
+        <span class="status-bar__battery-level">100%</span>
+        <i class="fas fa-battery-full"></i>
+      </div>
+    </div>
+
+    <!-- 채팅 헤더 -->
+    <header class="header">
+      <div class="header__header-column">
+        <a href="index.html" class="header__back-btn">
+          <i class="fas fa-angle-left fa-2x"></i>
+        </a>
+      </div>
+      <div class="header__header-column">
+        <span class="header__icon">
+          <h1 class="header__title">유니👰🏻</h1>
+        </span>
+      </div>
+      <div class="header__header-column">
+        <div class="header__icon">
+          <i class="fas fa-search"></i>
+        </div>
+        <div class="header__icon">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </header>
+    <!-- 채팅 메인 -->
+    <main class="chat">
+      <ul class="chat__messages">
+        <span class="chat__timestamp">2020년 5월 27일 수요일</span>
+        <!-- 상대방 -->
+        <li class="incoming-emssage message">
+          <img src="src/img/avatar.png" class="globar-avatar message__avatar" />
+          <div class="message__content">
+            <span class="mesage__author">유니👰🏻</span>
+            <div class="message__buble">
+              어디야ㅡㅡ?
+            </div>
+          </div>
+          <span class="message__timestamp">오전 9:29</span>
+        </li>
+        <!-- 본인 -->
+        <li class="incoming-emssage message">
+          <span class="message__timestamp">오전 9:30</span>
+          <div class="message__content">
+            <div class="message__buble">
+              😃😃😃
+            </div>
+          </div>
+        </li>
+      </ul>
+    </main>
+    <div class="chat__write">
+      <div class="chat__write-column">
+        <i class="far fa-plus-square"></i>
+      </div>
+      <div class="chat__write-column">
+        <!-- input으로 공간 절약 -->
+        <input
+          type="text"
+          placeholder="메세지를 입력하세요."
+          class="chat__write-input"
+        />
+      </div>
+      <div class="chat__write-column">
+        <span class="chat__write-icon">
+          <i class="far fa-smile-wink"></i>
+        </span>
+        <span class="chat__write-icon">
+          #
+        </span>
+      </div>
+    </div>
+  </body>
+</html>

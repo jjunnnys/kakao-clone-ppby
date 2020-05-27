@@ -1,38 +1,114 @@
+<!-- 컴포넌트 단위로 시작 또는 반복되는 페이지의 파트로 시작 -->
 <!DOCTYPE html>
-<html>
+<html lang="ko">
   <head>
-    <title>Parcel Sandbox</title>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="src/styles.css" />
-  </head>
-
-  <body>
-    <h1 class="text-light">Pure CSS Animated Gradient Background</h1>
-
-    <div class="btn-group mt-2 mb-4" role="group" aria-label="actionButtons">
-      <a
-        href="https://codepen-api-export-production.s3.us-west-2.amazonaws.com/zip/PEN/pyBNzX/1578778289271/pure-css-gradient-background-animation.zip"
-        class="d-block btn btn-outline-light"
-        download
-        ><i class="fas fa-file-download mr-2"></i>Download Source</a
-      >
-      <a
-        href="https://manuelpinto.in"
-        target="_blank"
-        class="d-block btn btn-outline-light"
-        >Visit my Website<i class="fas fa-external-link-square-alt ml-2"></i
-      ></a>
-    </div>
-
-    <h6 class="text-light small font-weight-bold">
-      <i class="fas fa-code"></i> with <i class="fas fa-heart"></i> by Manuel
-      Pinto
-    </h6>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"
-      integrity="sha256-qM7QTJSlvtPSxVRjVWNM2OfTAz/3k5ovHOKmKXuYMO4="
+      src="https://kit.fontawesome.com/cd5e56d4b7.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="src/css/styles.css" />
+    <title>채팅 | ppby</title>
+  </head>
+  <body>
+    <!-- 모바일 화면 상태 바(와이파이, 배터리 등... ) -->
+    <!-- 언더바 2번으로 엘리먼트를 구분(부모자식을 나누기 위함) -->
+
+    <!-- 상태바 -->
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <i class="fas fa-signal"></i>
+        <span class="status-bar__agency">KT</span>
+        <span class="status-bar__wifi">
+          <i class="fas fa-wifi"></i>
+        </span>
+      </div>
+      <div class="status-bar__column">
+        <span class="status-bar__clock">오전 10:14</span>
+      </div>
+      <div class="status-bar__column">
+        <i class="far fa-compass"></i>
+        <i class="far fa-clock"></i>
+        <span class="status-bar__battery-level">100%</span>
+        <i class="fas fa-battery-full"></i>
+      </div>
+    </div>
+
+    <!-- 채팅목록 헤더 -->
+    <header class="header">
+      <div class="header__header-column">
+        <h1 class="header__title">채팅</h1>
+      </div>
+      <div class="header__header-column">
+        <span class="header__icon">
+          <i class="fas fa-search"></i>
+        </span>
+        <span class="header__icon">
+          <i class="fas fa-comment-medical"></i>
+        </span>
+        <span class="header__icon">
+          <i class="fas fa-music"></i>
+        </span>
+        <span class="header__icon">
+          <i class="fas fa-cog"></i>
+        </span>
+      </div>
+    </header>
+
+    <!-- 채팅목록 메인 -->
+    <!-- 브라우저 상에서 디자인적인 측면에서 메인이 되는 곳 -->
+    <main class="chats">
+      <ul class="chats__list">
+        <li class="chats_chat chat">
+          <!-- 클래스명에 chats이 안들어가는 이유 ->
+          컴포넌트에 많은 내용을 담고 있으면 chat, chat-column, chat-avartar 등... 
+          이런식의 하나하나 클래스 명을 넣지 말고 하나의 New parent(chat)를 만든다. -->
+          <a href="chat.html">
+            <div class="chat__column">
+              <img
+                class="chat__avatar globar-avatar"
+                src="src/img/avatar.png"
+                alt="유니"
+              />
+              <div class="chat__content">
+                <span class="chat__username">
+                  유니👰🏻
+                </span>
+                <span class="chat__preview">😃😃😃</span>
+              </div>
+            </div>
+            <div class="chat__column">
+              <span class="chat__timestamp">오전 9:30</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </main>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__list-item">
+          <a href="friends.html" class="nav__list-link">
+            <i class="far fa-user"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="index.html" class="nav__list-link">
+            <i class="fas fa-comment"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="" class="nav__list-link">
+            #
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="more.html" class="nav__list-link">
+            <i class="fas fa-ellipsis-h"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
   </body>
 </html>
