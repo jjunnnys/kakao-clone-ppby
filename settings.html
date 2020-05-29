@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="src/css/styles.css" />
     <title>설정 | ppby</title>
   </head>
-  <body>
+  <body class="settings-body">
     <!-- 상태 바 -->
     <div class="status-bar">
       <div class="status-bar__column">
@@ -36,13 +36,11 @@
     <header class="header">
       <div class="header__header-column">
         <a href="more.html" class="header__back-btn">
-          <i class="fas fa-angle-left fa-2x"></i>
+          <i class="fas fa-angle-left"></i>
         </a>
       </div>
       <div class="header__header-column">
-        <span class="header__icon">
-          <h1 class="header__title">설정</h1>
-        </span>
+        <h1 class="header__title">설정</h1>
       </div>
       <div class="header__header-column">
         <div class="header__icon">
@@ -52,107 +50,141 @@
     </header>
     <!-- 설정 메인 -->
     <main class="settings">
-      <section class="stttings__sections">
+      <section class="settings__sections">
         <ul class="settings__list">
-          <li class="settings__setting">
-            <span class="settings__icon">
-              <i class="fas fa-bullhorn"></i>
-            </span>
-            <span class="settings__title">
-              공지사항
-            </span>
+          <li class="settings__setting setting">
+            <div class="setting__column">
+              <span class="setting__icon">
+                <i class="fas fa-bullhorn"></i>
+              </span>
+              <span class="setting__title">
+                공지사항
+              </span>
+            </div>
           </li>
-          <li class="settings__setting">
-            <span class="settings__icon">
-              <i class="fas fa-flask"></i>
-            </span>
-            <span class="settings__title">
-              실험실
-            </span>
+          <li class="settings__setting setting">
+            <div class="setting__column">
+              <span class="setting__icon">
+                <i class="fas fa-flask"></i>
+              </span>
+              <span class="setting__title">
+                실험실
+              </span>
+            </div>
           </li>
-          <li class="settings__setting">
-            <span class="settings__icon">
-              <i class="fas fa-info-circle"></i>
-            </span>
-            <span class="settings__title">
-              버전정보
-            </span>
+          <li class="settings__setting setting">
+            <div class="setting__column">
+              <span class="setting__icon">
+                <i class="fas fa-info-circle"></i>
+              </span>
+              <span class="setting__title">
+                버전정보
+              </span>
+            </div>
+            <div class="setting__column">
+              <span class="setting__info">
+                최신 버전
+              </span>
+            </div>
           </li>
         </ul>
       </section>
-      <section class="stttings__sections">
+      <section class="settings__sections">
         <ul class="settings__list">
-          <li class="settings__setting">
-            <span class="settings__icon">
-              <i class="fas fa-lock"></i>
-            </span>
-            <span class="settings__title">
-              개인/보안
-            </span>
+          <li class="settings__setting setting">
+            <div class="setting__column">
+              <span class="setting__icon">
+                <i class="fas fa-lock"></i>
+              </span>
+              <span class="setting__title">
+                개인/보안
+              </span>
+            </div>
           </li>
-          <li class="settings__setting">
-            <span class="settings__icon">
-              <i class="far fa-bell"></i>
-            </span>
-            <span class="settings__title">
-              알림
-            </span>
+          <li class="settings__setting setting">
+            <div class="setting__column">
+              <span class="setting__icon">
+                <i class="far fa-bell"></i>
+              </span>
+              <span class="setting__title">
+                알림
+              </span>
+            </div>
           </li>
-          <li class="settings__setting">
-            <span class="settings__icon">
-              <i class="far fa-user"></i>
-            </span>
-            <span class="settings__title">
-              친구
-            </span>
+          <li class="settings__setting setting">
+            <div class="setting__column">
+              <span class="setting__icon">
+                <i class="far fa-user"></i>
+              </span>
+              <span class="setting__title">
+                친구
+              </span>
+            </div>
           </li>
-          <li class="settings__setting">
-            <span class="settings__icon">
-              <i class="far fa-comment"></i>
-            </span>
-            <span class="settings__title">
-              채팅
-            </span>
+          <li class="settings__setting setting">
+            <div class="setting__column">
+              <span class="setting__icon">
+                <i class="far fa-comment"></i>
+              </span>
+              <span class="setting__title">
+                채팅
+              </span>
+            </div>
           </li>
-          <li class="settings__setting">
-            <span class="settings__icon">
-              <i class="far fa-lightbulb"></i>
-            </span>
-            <span class="settings__title">
-              화면
-            </span>
+          <li class="settings__setting setting">
+            <div class="setting__column">
+              <span class="setting__icon">
+                <i class="far fa-lightbulb"></i>
+              </span>
+              <span class="setting__title">
+                화면
+              </span>
+            </div>
           </li>
-          <li class="settings__setting">
-            <span class="settings__icon">
-              <i class="fas fa-brush"></i>
-            </span>
-            <span class="settings__title">
-              테마
-            </span>
+          <li class="settings__setting setting">
+            <div class="setting__column">
+              <span class="setting__icon">
+                <i class="fas fa-brush"></i>
+              </span>
+              <span class="setting__title">
+                테마
+              </span>
+            </div>
+            <div class="setting__column">
+              <span class="setting__info">
+                블랙
+              </span>
+            </div>
           </li>
-          <li class="settings__setting">
-            <span class="settings__icon">
-              <i class="fas fa-phone-alt"></i>
-            </span>
-            <span class="settings__title">
-              통화
-            </span>
+          <li class="settings__setting setting">
+            <div class="setting__column">
+              <span class="setting__icon">
+                <i class="fas fa-phone-alt"></i>
+              </span>
+              <span class="setting__title">
+                통화
+              </span>
+            </div>
           </li>
-          <li class="settings__setting">
-            <span class="settings__icon">
-              <i class="fas fa-gamepad"></i>
-            </span>
-            <span class="settings__title">
-              게임별
-            </span>
+          <li class="settings__setting setting">
+            <div class="setting__column">
+              <span class="setting__icon">
+                <i class="fas fa-gamepad"></i>
+              </span>
+              <span class="setting__title">
+                게임별
+              </span>
+            </div>
           </li>
-          <li class="settings__setting">
-            <span class="settings__icon">
-              <i class="fas fa-ellipsis-h"></i>
-            </span>
-            <span class="settings__title">
-              기타
-            </span>
+          <li class="settings__setting setting">
+            <div class="setting__column">
+              <span class="setting__icon">
+                <i class="fas fa-ellipsis-h"></i>
+              </span>
+              <span class="setting__title">
+                기타
+              </span>
+            </div>
           </li>
         </ul>
       </section>
@@ -167,16 +199,18 @@
         </li>
         <li class="nav__list-item">
           <a href="index.html" class="nav__list-link">
+            <div class="nav__badge">62</div>
             <i class="far fa-comment"></i>
           </a>
         </li>
         <li class="nav__list-item">
           <a href="" class="nav__list-link">
-            #
+            <i class="fas fa-hashtag"></i>
           </a>
         </li>
         <li class="nav__list-item">
           <a href="more.html" class="nav__list-link">
+            <div class="globar__badge-dot"></div>
             <i class="fas fa-ellipsis-h"></i>
           </a>
         </li>

@@ -1,0 +1,36 @@
+.friends .friends__header {
+  padding-top: 110px;
+  margin-bottom: 24px;
+}
+
+.friends .friends__row {
+  padding-top: 12px;
+  border-top: 1px solid #343a40;
+}
+
+.row .friend {
+  padding-bottom: 20px;
+}
+
+.friends .row--friends-list {
+  margin-bottom: 3rem;
+}
+
+.row .row__header {
+  color: #9296a3;
+  font-size: 14px;
+  margin-bottom: 28px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.friend .freind__now-listening {
+  color: #9296a3;
+  border: 1.5px solid;
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+
+.freind__now-listening i {
+  font-size: 12px;
+}

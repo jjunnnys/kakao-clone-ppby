@@ -1,0 +1,72 @@
+.more {
+  margin-top: 110px;
+}
+
+.more .more--email {
+  font-size: 20px;
+}
+.more .more__MY {
+  border: 1px solid #343a40;
+  border-radius: 25px;
+  padding: 5px 25px;
+  font-size: 25px;
+}
+
+.more .more__kakaopay {
+  background-color: #3e3f44;
+  border-radius: 10px;
+  margin: 20px 0px 30px 0px;
+  padding: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.kakaopay .kakaopay__comment {
+  background-color: #282b30;
+  border-radius: 25px;
+  padding: 10px 15px;
+  font-size: 25px;
+}
+.kakaopay__comment i {
+  font-size: 23px;
+  margin-right: 10px;
+}
+.kakaopay .kakaopay__btn {
+  font-size: 23px;
+  cursor: pointer;
+  padding: 0px 10px;
+  border-left: 1px solid rgba(212, 212, 213, 0.1);
+}
+
+.kakaopay .kakaopay__btn--left {
+  border-left: none;
+}
+
+.more .more__btn-list {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  color: #f5f5f5;
+  opacity: 0.8;
+}
+
+.more .more__btn {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.more__btn i {
+  font-size: 40px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.more__btn .friends-shop {
+  color: #ffae3c;
+}
+.more__btn .melon-ticket {
+  color: #69e069;
+}

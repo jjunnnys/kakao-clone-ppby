@@ -65,21 +65,62 @@
           컴포넌트에 많은 내용을 담고 있으면 chat, chat-column, chat-avartar 등... 
           이런식의 하나하나 클래스 명을 넣지 말고 하나의 New parent(chat)를 만든다. -->
           <a href="chat.html">
-            <div class="chat__column">
-              <img
-                class="chat__avatar globar-avatar"
-                src="src/img/avatar.png"
-                alt="유니"
-              />
-              <div class="chat__content">
-                <span class="chat__username">
-                  유니👰🏻
-                </span>
-                <span class="chat__preview">😃😃😃</span>
+            <!-- friend css한번만 작성해서 비슷한 곳에도 적용하기 위해서 -->
+            <div class="chats__chat friend">
+              <div class="friend__column">
+                <img
+                  src="src/img/avatar.png"
+                  alt=""
+                  class="midium-avatar friend__avatar"
+                />
+                <div class="friend__content">
+                  <span class="friend__name">
+                    유니👰🏻
+                  </span>
+                  <span class="friend__bottom-text">
+                    그만...!
+                  </span>
+                </div>
+              </div>
+              <div class="friend__column">
+                <div class="friend__content chat--right">
+                  <span class="chat__timestamp">
+                    오전 9:32
+                  </span>
+                  <!-- <span class="chat__num"></span> -->
+                </div>
               </div>
             </div>
-            <div class="chat__column">
-              <span class="chat__timestamp">오전 9:30</span>
+          </a>
+        </li>
+        <li class="chats_chat chat">
+          <a href="">
+            <div class="chats__chat friend">
+              <div class="friend__column">
+                <img
+                  src="src/img/together.jpeg"
+                  alt=""
+                  class="midium-avatar friend__avatar"
+                />
+                <div class="friend__content">
+                  <span class="friend__name">
+                    🔵우린함꼐여🔵
+                  </span>
+                  <span class="friend__bottom-text">
+                    ???
+                  </span>
+                </div>
+              </div>
+              <div class="friend__column">
+                <div class="friend__content chat--right">
+                  <span class="chat__timestamp">
+                    어제
+                  </span>
+                  <span class="chat__num">
+                    62
+                  </span>
+                </div>
+              </div>
             </div>
           </a>
         </li>
@@ -95,16 +136,18 @@
         </li>
         <li class="nav__list-item">
           <a href="index.html" class="nav__list-link">
-            <i class="fas fa-comment"></i>
+            <div class="nav__badge">62</div>
+            <i class="far fa-comment"></i>
           </a>
         </li>
         <li class="nav__list-item">
           <a href="" class="nav__list-link">
-            #
+            <i class="fas fa-hashtag"></i>
           </a>
         </li>
         <li class="nav__list-item">
           <a href="more.html" class="nav__list-link">
+            <div class="globar__badge-dot"></div>
             <i class="fas fa-ellipsis-h"></i>
           </a>
         </li>

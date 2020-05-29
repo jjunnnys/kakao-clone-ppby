@@ -1,0 +1,86 @@
+.friend {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.friend .friend__avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 38%;
+  background-color: #fff;
+}
+
+/* 다중 클래스 명을 선택하기 위해서 붙혀서 쓴다.*/
+.friend__avatar.globar-avatar {
+  width: 80px;
+  height: 80px;
+}
+
+.friend__avatar.midium-avatar {
+  width: 70px;
+  height: 70px;
+}
+
+.friend .friend__birthday-box,
+.friend .friend__recommended-box {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 38%;
+  margin-right: 15px;
+}
+.friend .friend__birthday-box {
+  background-color: #f56870;
+}
+.friend .friend__recommended-box {
+  background-color: #8879c5;
+}
+
+.friend .friend__column {
+  display: flex;
+  align-items: center;
+}
+.friend__column .friend__right {
+  color: #9296a3;
+}
+
+.friend .friend__avatar {
+  margin-right: 15px;
+}
+
+.friend .friend__content {
+  font-size: 24px;
+}
+
+.friend__content .friend__name-group {
+  display: flex;
+}
+.friend__name-group .friend__peaple-num {
+  margin-left: 5px;
+}
+
+.friend__content .friend__name {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.friend__content .friend__status,
+.friend__content .friend__bottom-text,
+.friend .chat__timestamp,
+.friend .friend__peaple-num {
+  display: flex;
+  color: #9296a3;
+}
+
+.friend__content .friend__bottom-text {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.friend__content .friend__status,
+.friend .chat__timestamp {
+  font-size: 14px;
+}

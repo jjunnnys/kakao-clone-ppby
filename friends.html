@@ -40,9 +40,11 @@
         <span class="header__icon">
           <i class="fas fa-search"></i>
         </span>
-        <span class="header__icon">
-          <i class="fas fa-user-plus"></i>
-        </span>
+        <a href="#find">
+          <span class="header__icon">
+            <i class="fas fa-user-plus"></i>
+          </span>
+        </a>
         <span class="header__icon">
           <i class="fas fa-music"></i>
         </span>
@@ -58,10 +60,10 @@
       <header class="friends__header">
         <!-- '--' 는 추가되는 새로운 클래스 '__' 는 부모 자식 
           같은 클래스명으로 다른 태그들에도 적용 가능-->
-        <div class="friends__friend friend freind--lg">
+        <div class="friends__friend friend">
           <div class="friend__column">
             <img
-              src="src/img/avatar2.JPG"
+              src="src/img/페퍼보이2.JPG"
               alt=""
               class="globar-avatar friend__avatar"
             />
@@ -75,88 +77,85 @@
         </div>
       </header>
       <!-- 생일 -->
-      <div class="friends__birthday">
-        <div class="friends__column">
-          <h5 class="friends__title">생일인 친구</h5>
-        </div>
-        <div class="friends__column">
+      <div class="friends__row row">
+        <div class="row__header">
+          <h5 class="row__title">생일인 친구</h5>
           <i class="fas fa-chevron-up"></i>
         </div>
         <div class="friends__friend friend">
           <div class="friend__column">
-            <span class="friend__birthday-icon">
-              <i class="fas fa-birthday-cake"></i>
+            <span class="friend__birthday-box">
+              <i class="fas fa-birthday-cake fa-2x"></i>
             </span>
             <div class="friend__content">
               <span class="friend__name">
                 친구의 생일을 확인해보세요!
               </span>
             </div>
-            <div class="friend__content">
-              <span>5 ></span>
-            </div>
+          </div>
+          <div class="friend__column">
+            <span class="friend__right"
+              >5 <i class="fas fa-chevron-right"></i
+            ></span>
           </div>
         </div>
       </div>
       <!-- 즐겨찾기 -->
-      <div class="friends__favorites">
-        <div class="friends__column">
-          <h5 class="friends__title">즐겨찾기</h5>
-        </div>
-        <div class="friends__column">
+      <ul class="friends__row row">
+        <div class="row__header">
+          <h5 class="row__title">즐겨찾기</h5>
           <i class="fas fa-chevron-up"></i>
         </div>
-        <div class="friends__friend friend">
+        <li class="friends__friend friend">
           <div class="friend__column">
-            <img
-              src="src/img/avatar.png"
-              alt=""
-              class="globar-avatar friend__avatar"
-            />
+            <img src="src/img/avatar.png" alt="" class="friend__avatar" />
             <div class="friend__content">
               <span class="friend__name">
                 유니👰🏻
               </span>
             </div>
           </div>
-          <div class="friend__content">
-            <span>5</span>
-            <span class="freind__show-btn">
-              <i class="fas fa-sort-down"></i>
-            </span>
+        </li>
+        <li class="friends__friend friend">
+          <div class="friend__column">
+            <img src="src/img/together.jpeg" alt="" class="friend__avatar" />
+            <div class="friend__content">
+              <div class="friend__name-group">
+                🔵우린함께여🔵
+                <span class="friend__peaple-num">4</span>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
+        </li>
+      </ul>
       <!-- 추천 친구 -->
-      <div class="friends__birthday">
-        <div class="friends__column">
-          <h5 class="friends__title">추천친구</h5>
-        </div>
-        <div class="friends__column">
+      <div class="friends__row row">
+        <div class="row__header">
+          <h5 class="row__title">추천친구</h5>
           <i class="fas fa-chevron-up"></i>
         </div>
         <div class="friends__friend friend">
           <div class="friend__column">
-            <span class="friend__birthday-icon">
-              <i class="far fa-smile-beam"></i>
+            <span class="friend__recommended-box">
+              <i class="far fa-kiss-beam fa-2x"></i>
             </span>
             <div class="friend__content">
               <span class="friend__name">
                 새로운 친구를 만나보세요!
               </span>
             </div>
-            <div class="friend__content">
-              <span>58 ></span>
-            </div>
+          </div>
+          <div class="friend__column">
+            <span class="friend__right"
+              >58 <i class="fas fa-chevron-right"></i
+            ></span>
           </div>
         </div>
       </div>
       <!-- 친구 목록 -->
-      <ul class="friends__list">
-        <div class="friends__column">
-          <h5 class="friends__title">친구 272</h5>
-        </div>
-        <div class="friends__column">
+      <ul class="friends__row row row--friends-list">
+        <div class="row__header">
+          <h5 class="row__title">친구 5</h5>
           <i class="fas fa-chevron-up"></i>
         </div>
         <li class="friends__friend friend">
@@ -164,12 +163,13 @@
             <img
               src="src/img/페퍼보이.jpeg"
               alt=""
-              class="globar-avatar friend__avatar"
+              class="friend__avatar"
             />
             <div class="friend__content">
               <span class="friend__name">
                 물고기
               </span>
+              <span class="friend__status">붕어</span>
             </div>
           </div>
           <div class="friend__column">
@@ -181,6 +181,85 @@
             </div>
           </div>
         </li>
+        <li class="friends__friend friend">
+          <div class="friend__column">
+            <img
+              src="src/img/페퍼보이.jpeg"
+              alt=""
+              class="friend__avatar"
+            />
+            <div class="friend__content">
+              <span class="friend__name">
+                물고기
+              </span>
+              <span class="friend__status">붕어</span>
+            </div>
+          </div>
+          <div class="friend__column">
+            <div class="freind__now-listening">
+              <span>
+                지렁이 - 한대수
+              </span>
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+        </li>
+        <li class="friends__friend friend">
+          <div class="friend__column">
+            <img
+              src="src/img/페퍼보이.jpeg"
+              alt=""
+              class="friend__avatar"
+            />
+            <div class="friend__content">
+              <span class="friend__name">
+                물고기
+              </span>
+              <span class="friend__status">붕어</span>
+            </div>
+          </div>
+          <div class="friend__column">
+            <div class="freind__now-listening">
+              <span>
+                지렁이 - 한대수
+              </span>
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+        </li>
+        <li class="friends__friend friend">
+          <div class="friend__column">
+            <img
+              src="src/img/페퍼보이.jpeg"
+              alt=""
+              class="friend__avatar"
+            />
+            <div class="friend__content">
+              <span class="friend__name">
+                물고기
+              </span>
+              <span class="friend__status">붕어</span>
+            </div>
+          </div>
+          <div class="friend__column">
+            <div class="freind__now-listening">
+              <span>
+                지렁이 - 한대수
+              </span>
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+        </li>
+        <li class="friends__friend friend">
+          <div class="friend__column">
+            <img src="src/img/avatar.png" alt="" class="friend__avatar" />
+            <div class="friend__content">
+              <span class="friend__name">
+                유니👰🏻
+              </span>
+            </div>
+          </div>
+        </li>
       </ul>
     </main>
 
@@ -188,25 +267,58 @@
       <ul class="nav__list">
         <li class="nav__list-item">
           <a href="friends.html" class="nav__list-link">
-            <i class="fas fa-user"></i>
+            <i class="far fa-user"></i>
           </a>
         </li>
         <li class="nav__list-item">
           <a href="index.html" class="nav__list-link">
+            <div class="nav__badge">62</div>
             <i class="far fa-comment"></i>
           </a>
         </li>
         <li class="nav__list-item">
           <a href="" class="nav__list-link">
-            #
+            <i class="fas fa-hashtag"></i>
           </a>
         </li>
         <li class="nav__list-item">
           <a href="more.html" class="nav__list-link">
+            <div class="globar__badge-dot"></div>
             <i class="fas fa-ellipsis-h"></i>
           </a>
         </li>
       </ul>
     </nav>
+    <!-- 찾기 모달 -->
+    <div id="find">
+      <div class="find__modal-wrapper modal">
+        <div class="modal__content">
+          <div class="modal__header">
+            <span class="modal__header-cancel">
+              <i class="fas fa-times"></i>
+            </span>
+            <div class="modal__header-title">친구 추가</div>
+          </div>
+          <ul class="modal__list">
+            <li class="modal__list-icon">
+              <i class="fas fa-qrcode"></i>
+              <span class="modal__list-title">QR코드</span>
+            </li>
+            <li class="modal__list-icon">
+              <i class="far fa-id-badge"></i>
+              <span class="modal__list-title">연락처로 추가</span>
+            </li>
+            <li class="modal__list-icon">
+              <i class="far fa-lightbulb"></i>
+              <span class="modal__list-title">ID로 추가</span>
+            </li>
+            <li class="modal__list-icon">
+              <i class="fas fa-user-plus"></i>
+              <span class="modal__list-title">추천친구</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

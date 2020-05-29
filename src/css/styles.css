@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Poor+Story&display=swap");
+@import "reset.css";
+@import "status-bar.css";
+@import "header.css";
+@import "nav-bar.css";
+@import "friend.css";
+@import "friends.css";
+@import "chats.css";
+@import "chat.css";
+@import "find.css";
+@import "more.css";
+@import "settings.css";
+
+/* 모든 요소 선택 */
+* {
+  /* 
+    box-sizing은 박스의 크기를 어떤 것을 기준으로 계산할지를 정하는 속성, 
+    border-box: 테두리를 기준으로 크기를 정한다. 박스 안의 content를 크게 안 만든다.
+  */
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #26282d;
+  color: #ffffff;
+  padding: 10px 24px;
+
+  /* 지정 폰트가 없을 시 기본 폰트로 설정 */
+  font-family: "Poor Story", cursive, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
+
+a {
+  /* 부모 요소로 부터 색깔을 받아온다. */
+  color: inherit;
+  /* 밑줄 없애기 */
+  text-decoration: none;
+}

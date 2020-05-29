@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="src/css/styles.css" />
     <title>유니👰🏻 | ppby</title>
   </head>
-  <body>
+  <body class="chat-body">
     <!-- 상태 바 -->
     <div class="status-bar">
       <div class="status-bar__column">
@@ -36,49 +36,101 @@
     <header class="header">
       <div class="header__header-column">
         <a href="index.html" class="header__back-btn">
-          <i class="fas fa-angle-left fa-2x"></i>
+          <i class="fas fa-angle-left"></i>
         </a>
+        <span class="header__number">62</span>
+      </div>
+      <div class="header__header-column">
+        <h1 class="header__title">유니👰🏻</h1>
       </div>
       <div class="header__header-column">
         <span class="header__icon">
-          <h1 class="header__title">유니👰🏻</h1>
-        </span>
-      </div>
-      <div class="header__header-column">
-        <div class="header__icon">
           <i class="fas fa-search"></i>
-        </div>
-        <div class="header__icon">
+        </span>
+        <span class="header__icon">
           <i class="fas fa-bars"></i>
-        </div>
+        </span>
       </div>
     </header>
     <!-- 채팅 메인 -->
-    <main class="chat">
+    <main class="chat-screen">
       <ul class="chat__messages">
         <span class="chat__timestamp">2020년 5월 27일 수요일</span>
         <!-- 상대방 -->
-        <li class="incoming-emssage message">
-          <img src="src/img/avatar.png" class="globar-avatar message__avatar" />
+        <li class="incoming-message message">
+          <img src="src/img/avatar.png" class="friend__avatar" />
           <div class="message__content">
-            <span class="mesage__author">유니👰🏻</span>
-            <div class="message__buble">
-              어디야ㅡㅡ?
-            </div>
+            <span class="message__author">유니👰🏻</span>
+            <span class="message__bubble">
+              :)
+            </span>
           </div>
-          <span class="message__timestamp">오전 9:29</span>
+          <span class="message__timestamp">
+            오전 9:29
+          </span>
         </li>
         <!-- 본인 -->
-        <li class="incoming-emssage message">
+        <li class="sent-message message">
+          <span class="message__timestamp"></span>
+          <div class="message__content">
+            <span class="message__bubble">
+              😃
+            </span>
+          </div>
+        </li>
+        <li class="sent-message message">
+          <span class="message__timestamp"></span>
+          <div class="message__content">
+            <span class="message__bubble">
+              😃😃
+            </span>
+          </div>
+        </li>
+        <li class="sent-message message">
           <span class="message__timestamp">오전 9:30</span>
           <div class="message__content">
-            <div class="message__buble">
+            <span class="message__bubble">
               😃😃😃
-            </div>
+            </span>
           </div>
+        </li>
+        <li class="sent-message message">
+          <span class="message__timestamp"></span>
+          <div class="message__content">
+            <span class="message__bubble">
+              😃😃😃😃
+            </span>
+          </div>
+        </li>
+        <li class="sent-message message">
+          <span class="message__timestamp"></span>
+          <div class="message__content">
+            <span class="message__bubble">
+              😃😃😃😃😃
+            </span>
+          </div>
+        </li>
+        <li class="sent-message message">
+          <span class="message__timestamp">오전 9:31</span>
+          <div class="message__content">
+            <span class="message__bubble">
+              😃😃😃😃😃😃
+            </span>
+          </div>
+        </li>
+        <li class="incoming-message message">
+          <img src="src/img/avatar.png" class="friend__avatar" />
+          <div class="message__content">
+            <span class="message__author">유니👰🏻</span>
+            <span class="message__bubble">
+              그만...!
+            </span>
+          </div>
+          <span class="message__timestamp">오전 9:32</span>
         </li>
       </ul>
     </main>
+
     <div class="chat__write">
       <div class="chat__write-column">
         <i class="far fa-plus-square"></i>
@@ -96,7 +148,7 @@
           <i class="far fa-smile-wink"></i>
         </span>
         <span class="chat__write-icon">
-          #
+          <i class="fas fa-hashtag"></i>
         </span>
       </div>
     </div>
