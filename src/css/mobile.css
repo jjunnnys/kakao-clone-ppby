@@ -1,0 +1,26 @@
+.big-screen {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fee803;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #191919;
+  font-size: 50px;
+  padding: 0px 20px;
+  text-align: center;
+  display: none;
+  z-index: 4;
+}
+
+@media screen and (min-width: 550px) {
+  .big-screen {
+    display: flex;
+  }
+  .status-bar {
+    display: none;
+  }
+}

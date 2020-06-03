@@ -10,6 +10,7 @@
 @import "find.css";
 @import "more.css";
 @import "settings.css";
+@import "mobile.css";
 
 /* 모든 요소 선택 */
 * {
@@ -41,4 +42,19 @@ a {
   color: inherit;
   /* 밑줄 없애기 */
   text-decoration: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+main {
+  animation: fadeIn 0.5s ease-in-out;
 }
